@@ -92,6 +92,9 @@ const Games = ({ category, showFavorites, setShowFavorites, searchQuery, selecte
         setGames(updatedGames);
 
         // Update favorite games state
+        if (favoriteGames) {
+            return
+        }
         const updatedFavorites = updatedGames.filter((g) => g.isFavorite);
         setFavoriteGames(updatedFavorites);
     };

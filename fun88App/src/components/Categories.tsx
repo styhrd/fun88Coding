@@ -1,5 +1,5 @@
 // Categories.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Games from './Games';
 import SearchBar from './SearchBar';
 import searchlogo from '../assets/SvgIcons/search.svg';
