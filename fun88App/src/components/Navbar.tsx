@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../styles/navbar.css'
 import logo from '../assets/DeveloperLogo/F1M5_Logo.webp';
 

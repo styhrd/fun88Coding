@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+
 import Carousel from './components/Carousel.tsx';
 import bellIcon from './assets/SvgIcons/bell-svgrepo-com 1.svg';
 import { Navbar } from './components/Navbar.tsx';
-import Games from './components/Games.tsx';
 import Categories from './components/Categories.tsx';
 
 function App() {

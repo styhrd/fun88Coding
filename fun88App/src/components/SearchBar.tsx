@@ -20,7 +20,6 @@ import pragmaticPlayLogo from '../assets/DeveloperLogo/PRAGMATICPLAY.webp';
 import psLogo from '../assets/DeveloperLogo/PS.webp';
 import redtigerLogo from '../assets/DeveloperLogo/REDTIGER.webp';
 import relaxLogo from '../assets/DeveloperLogo/RELAX.webp';
-import filterlogo from '../assets/SvgIcons/3BAR.svg'
 
 interface SearchBarProps {
     onSearch: (query: string) => void;
