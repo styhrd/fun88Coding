@@ -14,13 +14,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 0em 1em;
+
 }
 
 .primary-text {
     color: #00a6ff;
     font-weight: bolder;
     font-size: 1.1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", serif;
+    ;
 }
 
 .divider {

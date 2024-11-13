@@ -1,25 +1,35 @@
+import React, { useState } from 'react';
+import Carousel from './components/Carousel.tsx';
+import bellIcon from './assets/SvgIcons/bell-svgrepo-com 1.svg';
+import { Navbar } from './components/Navbar.tsx';
+import Games from './components/Games.tsx'; // Assuming Games component holds the games data
+import Categories from './components/Categories.tsx';
 
-import './App.css'
-import Carousel from './components/Carousel.tsx'
-import { Navbar } from './components/Navbar.tsx'
 function App() {
 
   return (
-    <>
-      <div className='main'>
-        <div className='header'>
-          <Navbar />
-        </div>
-
-        <div className='carousell'>
+    <div className='main'>
+      <div className='header'>
+        <Navbar />
+      </div>
+      <div className='content-container'>
+        <div className='carousel'>
           <Carousel />
         </div>
 
+        <div className='alert'>
+          <img src={bellIcon} alt="Arrow Icon" width="18" height="18" />
+          <p>¡FELICIDADES artxxxxipa! GANADOR DESTACADO</p>
+        </div>
 
+        <div className='category'>
+          <Categories />
 
+        </div>
       </div>
-    </>
-  )
+
+    </div>
+  );
 }
 
-export default App
+export default App;

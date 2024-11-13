@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 html,
 body {
     width: 100%;
@@ -12,6 +14,45 @@ body {
         0 2px 4px -2px rgba(0, 0, 0, .1);
 }
 
-.carousell {
+.content-container {
     margin: 15px;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", serif;
+    ;
+    color: #00a6ff;
+    max-height: 40px;
+    gap: 5px;
+}
+
+.alert p {
+    transition: font-size 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categories button {
+    background-color: none;
+    border: none;
+    background: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: white;
+}
+
+.default {
+    font-family: "Inter", serif;
+    font-size: .9em;
+    display: grid;
+    place-items: center;
+    color: #888888;
+    margin-top: 1em;
 }
