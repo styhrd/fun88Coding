@@ -1,0 +1,17 @@
+Pride of Persia - playtech - img name : Pop
+Sugar Rush - PragmaticPlay - img name : SR
+Big Bro Wold - playtech - img name : BBWQ
+Shaolin Crew - Xpanz - img name : SC
+Book of Egypt - Xpanz - img name : BOE
+Pirates Power - Xpanz - img name : PP
+Crocodile Blitz - playtech - img name : CB
+Anaconda wild 2 - playtech - img name : AW
+Maya Jackpot - skywind - img name : MJ
+Beach Life - playtech - img name : BL
+Azteca Bonus Lines - playtech - img name : ABL
+Inca Jackpot - skywind - img name : IJ
+
+categories - new, slots, live, jackpot, table, bingo, others
+
+status - favorite or not favorite 
+
