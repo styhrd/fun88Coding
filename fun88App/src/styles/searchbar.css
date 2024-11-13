@@ -24,8 +24,6 @@
     padding: 7px;
 }
 
-/* Modal container styles */
-/* Modal container styles */
 .filter-modal {
     position: fixed;
     background-color: white;
@@ -33,38 +31,26 @@
     left: 0;
     width: 100%;
     height: 60%;
-    /* Dark background with transparency */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 1000;
-    /* Ensure modal is above other elements */
 }
 
-/* Modal content styles */
 .modal-content {
-
     padding: 20px;
     border-radius: 8px;
     width: 80%;
-    /* Width is 80% of the screen */
     max-width: 600px;
-    /* Maximum width for larger screens */
     height: 80%;
-    /* Height is 80% of the screen */
     max-height: 600px;
-    /* Optional: cap the height to avoid too large modals on big screens */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Create 2 columns */
     gap: 20px;
-    /* Space between images */
     overflow-y: auto;
-    /* Allow scroll if content exceeds height */
 }
 
-/* Modal header styles */
 .modal-header {
     display: flex;
     background-color: #4aa3f8;
@@ -94,10 +80,7 @@
 
 .modalhead img {
     fill: white;
-    /* Blue color for SVG icons */
     filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(5216%) hue-rotate(180deg) brightness(95%) contrast(103%);
-    /* For SVG images */
-
 }
 
 .modal-header h2 {
@@ -112,7 +95,6 @@
     cursor: pointer;
 }
 
-/* Provider image container styles */
 .provider-option {
     display: flex;
     flex-direction: column;
@@ -123,16 +105,12 @@
 
 .provider-option.selected {
     border: 1px solid #00a6ff;
-    /* Highlight selected items */
     border-radius: 5px;
 }
 
-/* Image styles */
 .provider-image {
     width: 100px;
     height: auto;
-    /* Maintain aspect ratio */
     object-fit: contain;
-    /* Ensure the image fits within the 100px width */
     margin-bottom: 10px;
 }

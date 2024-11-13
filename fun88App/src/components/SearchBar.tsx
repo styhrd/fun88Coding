@@ -24,7 +24,7 @@ import filterlogo from '../assets/SvgIcons/3BAR.svg'
 
 interface SearchBarProps {
     onSearch: (query: string) => void;
-    onFilter: (selectedProviders: string[]) => void;  // New prop to handle provider filtering
+    onFilter: (selectedProviders: string[]) => void;
 }
 
 // Map each provider to its corresponding image import
@@ -65,9 +65,8 @@ const SearchBar = ({ onSearch, onFilter }: SearchBarProps) => {
 
     const handleProviderSelect = (provider: string) => {
         const newSelectedProviders = selectedProviders.includes(provider)
-            ? selectedProviders.filter((item) => item !== provider)  // Deselect if already selected
-            : [...selectedProviders, provider];  // Select if not already selected
-
+            ? selectedProviders.filter((item) => item !== provider)
+            : [...selectedProviders, provider];
         setSelectedProviders(newSelectedProviders);
         onFilter(newSelectedProviders);  // Apply filter immediately when a provider is selected/deselected
     };

@@ -13,7 +13,6 @@ const Footer = ({ showFavoriteGames, setShowFavoriteGames }: FooterProps) => {
 
     return (
         <footer className="footer">
-            {/* Favorites Button */}
             <button onClick={handleFavoritesClick} className="favorites-btn">
                 <img src={FavoritesLogo} alt="Favorites" />
                 {showFavoriteGames ? 'Show All' : 'Show Favorites'}

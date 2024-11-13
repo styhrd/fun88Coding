@@ -18,7 +18,7 @@ const Categories = () => {
     const [showSearchBar, setShowSearchBar] = useState<boolean>(false);
     const [showFavorites, setShowFavorites] = useState<boolean>(false);
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [selectedProviders, setSelectedProviders] = useState<string[]>([]);// Search query state
+    const [selectedProviders, setSelectedProviders] = useState<string[]>([]);
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -29,7 +29,7 @@ const Categories = () => {
         setShowSearchBar((prev) => !prev);
     };
 
-    const handleSearch = (query: string) => {// Add this log to check the function execution
+    const handleSearch = (query: string) => {
         setSearchQuery(query);
     };
     const handleFilter = (providers: string[]) => {
@@ -114,14 +114,14 @@ const Categories = () => {
                 </button>
             </div>
 
-            {showSearchBar && <SearchBar onSearch={handleSearch} onFilter={handleFilter} />} {/* Pass search handler to SearchBar */}
+            {showSearchBar && <SearchBar onSearch={handleSearch} onFilter={handleFilter} />}
 
             <Games
                 category={selectedCategory}
                 showFavorites={showFavorites}
                 setShowFavorites={setShowFavorites}
                 searchQuery={searchQuery}
-                selectedProviders={selectedProviders}// Pass search query to Games component
+                selectedProviders={selectedProviders}
             />
         </div>
     );

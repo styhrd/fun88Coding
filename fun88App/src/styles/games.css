@@ -1,33 +1,21 @@
-/* Grid container for the games images */
 .gamesimg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Always 3 columns */
     gap: 10px;
-    /* Spacing between images */
     margin: 0px 0;
 }
 
-/* Grid item for each game image */
 .gamesimg .gameimg {
     display: flex;
     justify-content: center;
-    /* Center the image horizontally */
     align-items: center;
-    /* Center the image vertically */
 }
 
-/* Make images scalable and responsive */
 .gamesimg img {
     width: 100%;
-    /* Make the image fill its container */
     height: auto;
-    /* Maintain aspect ratio */
     object-fit: contain;
-    /* Ensures images don't get distorted */
 }
-
-
 
 .gameimg {
     position: relative;
@@ -38,28 +26,21 @@
     position: absolute;
     padding: .5em;
     top: 0px;
-    /* Adjust the distance from the top as needed */
     right: 0px;
-    /* Adjust the distance from the right as needed */
     border: none;
     background: none;
     cursor: pointer;
     font-size: 40px;
     color: gray;
-    /* Default color for the star */
 }
 
 .star-button.favorited {
     color: gold;
-    /* Color when the game is marked as favorite */
 }
 
-
-/* Make the layout responsive for smaller screens */
 @media (max-width: 1024px) {
     .gamesimg {
         grid-template-columns: repeat(3, 1fr);
-        /* Keep 3 items per row */
     }
 }
 
@@ -69,14 +50,11 @@
         padding: 0;
         margin: 0;
         top: 0px;
-        /* Adjust the distance from the top as needed */
         right: 1px;
-        /* Adjust the distance from the right as needed */
         border: none;
         cursor: pointer;
         font-size: 24px;
         color: gray;
-        /* Default color for the star */
     }
 
     .gamescont {

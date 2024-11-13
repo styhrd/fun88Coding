@@ -1,31 +1,23 @@
-/* Default category button style */
 .categories button {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    /* Adds space between buttons */
 }
 
 .categories {
     display: flex;
     width: 100%;
     overflow-x: auto;
-    /* Enables horizontal scrolling */
     -webkit-overflow-scrolling: touch;
-    /* Enables smooth scrolling on touch devices */
     flex-wrap: nowrap;
-    /* Prevents wrapping, making it scrollable horizontally */
     justify-content: space-between;
-    /* Aligns buttons to the left */
 }
 
-/* Hide scrollbar */
 .categories::-webkit-scrollbar {
     display: none;
 }
 
-/* Style the buttons inside the categories */
 .category-container {
     width: 100%;
 }
@@ -34,10 +26,7 @@
 .search-btn img {
     width: 25px;
     margin-bottom: 5px;
-    /* Adds space between image and text */
 }
-
-
 
 .category-btn {
     padding: 5px 10px;
@@ -50,19 +39,15 @@
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
-    /* Ensures each button aligns with the start of the container */
 }
 
-/* Active category button style (when selected) */
 .category-btn.active {
     color: #00a6ff;
-    /* Blue text */
 }
 
 .category-btn.active p,
 .search-btn.active p {
     border-bottom: 1px solid #00a6ff;
-    /* Blue text */
     color: #00a6ff;
 }
 
@@ -72,15 +57,11 @@
     color: #888888;
 }
 
-/* Active category button style (when selected) */
 .category-btn.active img {
     fill: #00a6ff;
-    /* Blue color for SVG icons */
     filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(5216%) hue-rotate(180deg) brightness(95%) contrast(103%);
-    /* For SVG images */
 }
 
-/* Default search button style */
 .search-btn {
     padding: 10px 0px;
     background-color: #f0f0f0;
@@ -92,17 +73,13 @@
     justify-content: center;
 }
 
-/* Active search button style (when active) */
 .search-btn.active {
     color: #007bff;
-    /* Blue text */
 }
 
 .search-btn.active img {
     fill: #00a6ff;
-    /* Blue color for SVG icons */
     filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(5216%) hue-rotate(180deg) brightness(95%) contrast(103%);
-    /* For SVG images */
 }
 
 .vertical-line2 {

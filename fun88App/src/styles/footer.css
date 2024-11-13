@@ -44,16 +44,12 @@
 
 .footer-logo.active img {
     fill: #00a6ff;
-    /* Blue color for SVG icons */
     filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(5216%) hue-rotate(180deg) brightness(95%) contrast(103%);
-    /* For SVG images */
 }
 
 .footer-logo.active p {
     color: #00a6ff;
 }
-
-/* Optional: Add a hover effect to emphasize the interactive nature */
 
 
 @media screen and (max-width: 450px) {

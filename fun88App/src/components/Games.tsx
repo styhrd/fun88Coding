@@ -26,24 +26,24 @@ interface Game {
     name: string;
     img: string;
     gameProvider: string;
-    category: string; // 'jackpot', 'slots', etc.
-    isNew: boolean; // Tag for new games
-    isFavorite: boolean; // Added favorite status
+    category: string;
+    isNew: boolean;
+    isFavorite: boolean;
 }
 
 interface GamesProps {
     category: string;
     showFavorites: boolean;
     setShowFavorites: React.Dispatch<React.SetStateAction<boolean>>;
-    searchQuery: string;// Type for setShowFavorites function
+    searchQuery: string;
     selectedProviders: string[];
 }
 
 const Games = ({ category, showFavorites, setShowFavorites, searchQuery, selectedProviders }: GamesProps) => {
-    const [games, setGames] = useState<Game[]>([]); // All games state
-    const [favoriteGames, setFavoriteGames] = useState<Game[]>([]); // Favorite games state
-    const [loading, setLoading] = useState<boolean>(true); // Loading state
-    const [activeFooterLogo, setActiveFooterLogo] = useState<string | null>(null); // State for active logo
+    const [games, setGames] = useState<Game[]>([]);
+    const [favoriteGames, setFavoriteGames] = useState<Game[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [activeFooterLogo, setActiveFooterLogo] = useState<string | null>(null);
 
     // Mock API call function
     const mockApiCall = useCallback(async (): Promise<Game[]> => {
@@ -66,7 +66,7 @@ const Games = ({ category, showFavorites, setShowFavorites, searchQuery, selecte
         // Mark the last 3 games as new
         const updatedGames = gamesData.map((game, index) => ({
             ...game,
-            isNew: index >= gamesData.length - 3 // Last 3 games marked as new
+            isNew: index >= gamesData.length - 3
         }));
 
         return new Promise((resolve) => {
@@ -99,7 +99,7 @@ const Games = ({ category, showFavorites, setShowFavorites, searchQuery, selecte
     // Handle footer click to toggle between categories and favorites view
     const handleFooterClick = (logo: string) => {
         if (logo === 'FAVE') {
-            setShowFavorites((prev) => !prev); // Toggle showFavorites state
+            setShowFavorites((prev) => !prev);
         }
         setActiveFooterLogo(logo === activeFooterLogo ? null : logo);
     }
