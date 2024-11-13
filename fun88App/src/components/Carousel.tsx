@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../styles/carousell.css';
+import Frame18 from '../assets/GameLogo/Frame18.webp'; // Import the image directly
 
 function Carousel() {
     // State to track the current slide
@@ -7,11 +8,11 @@ function Carousel() {
 
     // Array of images to display in the carousel
     const images = [
-        '/src/assets/GameLogo/Frame18.webp',
-        '/src/assets/GameLogo/Frame18.webp',
-        '/src/assets/GameLogo/Frame18.webp',
-        '/src/assets/GameLogo/Frame18.webp',
-        '/src/assets/GameLogo/Frame18.webp',
+        Frame18, // Use imported image variable
+        Frame18,
+        Frame18,
+        Frame18,
+        Frame18,
     ];
 
     // Effect to automatically change the slide every 5 seconds
