@@ -7,11 +7,11 @@ function Carousel() {
 
     // Array of images to display in the carousel
     const images = [
-        '/src/assets/Frame 18.webp',
-        '/src/assets/Frame 18.webp',
-        '/src/assets/Frame 18.webp',
-        '/src/assets/Frame 18.webp',
-        '/src/assets/Frame 18.webp',
+        '/src/assets/GameLogo/Frame 18.webp',
+        '/src/assets/GameLogo/Frame 18.webp',
+        '/src/assets/GameLogo/Frame 18.webp',
+        '/src/assets/GameLogo/Frame 18.webp',
+        '/src/assets/GameLogo/Frame 18.webp',
     ];
 
     // Effect to automatically change the slide every 5 seconds
